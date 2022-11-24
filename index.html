@@ -9,6 +9,85 @@
     <title>Student Registratiom Form</title>
 </head>
 <body>
+    <form action = "#" method="POST">
+        <fieldset style="width:150px;">
+            <legend>Register</legend>
+            <div class = "first_name">
+                <label for = "first_name">First name:</label>
+                <input type = "text" name = "first_name" id = "first_name" autocomplete="off" required>
+            </div>
+
+            <div class = "last_name">
+                <label for="last_name">Last Name:</label>
+                <input type = "text" name = "last_name" id = "last_name"  autocomplete="off"  required>
+            </div>
+
+            <div class = "birthday">
+                <label for="birthday">Date of Birth:</label>
+                <input type = "date" name = "birthday" id = "birthday"  autocomplete="off"  required>
+            </div>
+
+            <div class = "sex">
+                <span>Sex:</span>
+                <input type="radio" name = "sex" id = "male" required>
+                <label for = "male">Male</label>
+
+                <input type="radio" name = "sex" id = "female" required>
+                <label for = "female">Female</label>
+                
+
+            
+            </div>
+
+            <div class = "activities">
+                <p>Interests::</p>
+                <input type="checkbox" name="activities" id="sports">
+                <label for="sports">Sports</label>
+                 <br>
+                <input type="checkbox" name="activities" id="volunteer">
+                <label for="volunteer">Volunteer</label>
+                <br>
+                <input type="checkbox" name="activities" id="research">
+                <label for="research">Research</label>
+                <br>
+                <input type="checkbox" name="activities" id="socializing">
+                <label for="socializing">Socializing</label>
+                <br>
+                <input type="checkbox" name="activities" id="tutoring">
+                <label for="tutoring">Tutoring</label>
+                
+
+            </div>
+
+         
+            
+            <div class = "phone-number">
+                <label for = "phone-number">Phone Number:</label>
+                <input type="tel" name = "phone-number" id = "phone-number">
+
+            </div>
+
+            <div class = "email">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class = "major">
+                <label for="major">College Major:</label>
+                <input type = "text" list = "majors" name = "major" id = "major" required>
+                <datalist class = "majors" id = "majors">
+                    <option value="Computer Science"></option>
+                    <option value="Biology"></option>
+                    <option value="Business Administration"></option>
+                    <option value="Nursing"></option>
+                    <option value="Education"></option>
+                </datalist>
+            </div>
+            <div class = "register-btn">
+                <input type = "submit" value = "Register" id = "register-btn">
+            </div>
+        </fieldset>
     
+        
+    </form>
 </body>
 </html>
